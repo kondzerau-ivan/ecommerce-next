@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ecommerce-next
 
-## Getting Started
+The e-commerce platform is built on Next.js and MongoDB.
 
-First, run the development server:
+## Создание моделей
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Пользователь:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Поля: id, имя пользователя, email, пароль и т.д.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. Товар:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Поля: id, название, описание, цена, изображение и т.д.
 
-## Learn More
+3. Заказ:
 
-To learn more about Next.js, take a look at the following resources:
+Поля: id, пользователь, товар, тип заказа (покупка/продажа), дата создания и т.д.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Регистрация и аутентификация
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Реализовать опциональную регистрацию пользователей.
 
-## Deploy on Vercel
+2. Реализовать аутентификацию пользователей и создание личного кабинета.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Админка
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Создать панель администрирования.
+
+2. Реализовать управление товарами (создание, редактирование, удаление).
+
+3. Реализовать управление пользователями (просмотр, блокировка).
+
+4. Реализовать просмотр списка транзакций.
+
+## Функционал платформы
+
+1. Реализовать возможность размещения заказа на покупку/продажу по фиксированной цене.
+
+2. Реализовать возможность размещения заказа на аукцион до 48 часов.
+
+3. Создать главную страницу с отображением списка товаров, доступных для покупки.
+
+4. Добавить функционал поиска товаров с ненулевым предложением.
+
+## Верстка
+
+1. После выполнения вышеуказанных задач, заняться версткой всех страниц с использованием Tailwind CSS.
