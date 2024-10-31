@@ -3,6 +3,13 @@ model User {
   name     String    @unique
   email    String    @unique
   password String
+  role     Role      @default(GUEST)
   products Product[]
   orders   Order[]
+}
+
+enum Role {
+  ADMIN
+  GUEST
+  USER
 }
